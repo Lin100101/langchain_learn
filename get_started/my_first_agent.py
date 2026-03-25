@@ -67,4 +67,5 @@ result = agent.invoke(
     {"messages": [HumanMessage(content="北京的天气怎么样？")]}
 )
 
-print(result)
+final_answer = result["messages"][-1].content
+print(final_answer)
